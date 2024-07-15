@@ -1,1 +1,1 @@
-pyinstaller --platform=$1 --noconfirm --onefile --console --name "wttr"  "wttr.py"
+pyinstaller --noconfirm --onefile --console --name "wttr"  "wttr.py"
