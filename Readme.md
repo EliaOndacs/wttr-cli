@@ -16,8 +16,6 @@ after the build is complete the executable should be in "dist/" directory
 
 ## INFO
 
-check out wttr.in [repo](https://github.com/chubin/wttr.in)
-
-original wttr.in author: Igor Chubin
+check out wttr.in and its creator [repo](https://github.com/chubin/wttr.in)
 
 enjoy!:upside_down_face:
