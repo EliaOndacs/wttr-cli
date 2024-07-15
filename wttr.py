@@ -7,7 +7,7 @@ def getArg(idx: int,detail):
         return sys.argv[idx]
     else:
         print(f"wttr {detail["command"]} ****")
-        print(f"expected argument where{" "*int(len(detail["command"])-16)}^^ ")
+        print(f"expected argument where{" "*abs(int(len(detail["command"])-16))}^^ ")
         print(f"reason:\n{detail["reason"]}")
         sys.exit(1)
 
@@ -37,6 +37,9 @@ match command:
         print("Unofficial wttr.in cli tool")
         Usage()
     case _:
-        print("Unofficial wttr.in cli tool")
-        Usage()
+        response = requests.get(BASE+"/"+getArg(2,{"command":"","reason":"require a location or a domain"}))
+        if response.ok:
+            print(response.text)
+        else:
+            Failed(response.reason)
 
