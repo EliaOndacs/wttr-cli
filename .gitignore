@@ -1,0 +1,7 @@
+
+# git ignore :upside_down_face:
+
+build
+wttr.spec
+dist
+
